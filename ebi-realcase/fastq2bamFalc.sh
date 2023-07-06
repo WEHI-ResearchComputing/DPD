@@ -11,6 +11,7 @@ module add samtools/1.16.1
 sample=$1
 f1=${sample}'_1.fastq.gz'
 f2=${sample}'_2.fastq.gz'
+fn=$( basename ${1} )
 echo 'filebasename is' $fn
 echo 'fastq file expected in' $( dirname $1 )
 echo 'Output bam files will be in' $( pwd -P )
